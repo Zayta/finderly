@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet } from 'react-native';
 import { StackScreenProps } from '@react-navigation/stack';
-import { RootStackParamList } from '../navigation/RootNavigator';
+import { RootStackParamList } from '@src/navigation/RootNavigator';
 
 type Props = StackScreenProps<RootStackParamList, 'Onboarding_2'>;
 

@@ -1,7 +1,8 @@
+import OnBoarding_1Screen from '@src/screens/onboarding_1';
+import OnBoarding_2Screen from '@src/screens/onboarding_2';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import OnBoarding_1Screen from '../screens/Onboarding_1';
-import OnBoarding_2Screen from '../screens/Onboarding_2';
+
 
 //define the props necessary for each screen or undefined if there are no custom props necessary
 export type RootStackParamList = {
