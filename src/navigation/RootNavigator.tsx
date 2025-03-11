@@ -16,7 +16,8 @@ export default function RootNavigator() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Onboarding_1">
-        <Stack.Screen name="Onboarding_1" component={OnBoarding_1Screen} />
+        <Stack.Screen name="Onboarding_1" component={OnBoarding_1Screen} options={{headerShown: false,
+        }}/>
         <Stack.Screen name="Onboarding_2" component={OnBoarding_2Screen} />
       </Stack.Navigator>
     </NavigationContainer>

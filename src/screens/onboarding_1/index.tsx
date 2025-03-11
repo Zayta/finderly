@@ -1,12 +1,12 @@
 import React from "react";
+import { StyleSheet } from "react-native";
 import { View, Text, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { RootStackParamList } from "@src/navigation/RootNavigator";
-import { styles } from "@src/screens/onboarding_1/styles";
-import BackButton from "@src/screens/onboarding_1/components/BackButton";
-import ImageViewer from "@src/screens/onboarding_1/components/ImageViewer";
-import BackgroundImage from "@assets/images/onboarding_1-bg.png";
+import { ImageBackground } from "expo-image";
+import Overlay from "@src/screens/onboarding_1/components/Overlay";
+import { SafeAreaProvider, SafeAreaView} from "react-native-safe-area-context";
 
 type NavigationProp = StackNavigationProp<RootStackParamList, "Onboarding_1">;
 
@@ -14,21 +14,31 @@ export default function OnBoarding_1Screen() {
   const navigation = useNavigation<NavigationProp>();
 
   return (
-    <View style={styles.container}>
-  <ImageViewer imgSource={BackgroundImage} />
-  <View style={styles.overlay}>
-    <BackButton />
-    <View style={styles.textContainer}>
-      <Text style={styles.title}>Hire a Professional</Text>
-      <Text style={styles.subtitle}>
-        Snap a photo, and Finderly's home improvement partners connect you with vetted pros—fast.
-      </Text>
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Onboarding_2")}>
-        <Text style={styles.buttonText}>Get Started</Text>
-      </TouchableOpacity>
-    </View>
-  </View>
-</View>
+    <SafeAreaProvider>
+    <SafeAreaView style={styles.container} edges={['left', 'right']}>
+      <ImageBackground source={require("@assets/images/onboarding_1-bg.png")} resizeMode="stretch" style={styles.image} >
+          <Overlay/>
+      </ImageBackground>
+  </SafeAreaView>
+  </SafeAreaProvider>
 
   );
 }
+
+export const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+    },
+    image: {
+      flex: 1,
+      justifyContent: 'center',
+      width: '100%',
+      height: '100%'
+    },
+    overlay: {
+        ...StyleSheet.absoluteFillObject,
+        justifyContent: "flex-end",
+        alignItems: "center",
+    },
+   
+});

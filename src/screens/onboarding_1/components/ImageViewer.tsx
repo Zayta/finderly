@@ -11,7 +11,7 @@ export default function ImageViewer({ imgSource }: Props) {
       source={imgSource}
       style={styles.image}
       contentFit="cover" // Ensures the image fully covers the screen
-      contentPosition={{ top: 0 }} // Forces the image to align from the top
+      contentPosition={{ top: '-100px' }} // Forces the image to align from the top
     />
   );
 }
