@@ -1,34 +1,31 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-    background: {
-        flex: 1,
-        width: "100%",
-        height: "100%",
-        justifyContent: "flex-end",
+    container: {
+        flex: 1, // Ensures it takes full screen
+        position: "relative",
     },
-    backButton: {
-        position: "absolute",
-        top: 50,
-        left: 20,
-        backgroundColor: "rgba(0,0,0,0.3)",
-        borderRadius: 20,
-        padding: 8,
+    overlay: {
+        ...StyleSheet.absoluteFillObject,
+        justifyContent: "flex-end",
+        alignItems: "center",
     },
     textContainer: {
         backgroundColor: "white",
         width: "100%",
-        height: "50%", // Covers bottom half
-        borderTopLeftRadius: 30,
-        borderTopRightRadius: 30,
-        padding: 30,
+        padding: 20,
+        borderRadius: 20,
         alignItems: "center",
         justifyContent: "center",
+        shadowColor: "#000",
+        shadowOpacity: 0.2,
+        shadowOffset: { width: 0, height: 2 },
+        shadowRadius: 5,
     },
     title: {
         fontSize: 22,
         fontWeight: "bold",
-        color: "#D500F9", // Purple-pink color
+        color: "#D500F9",
         textAlign: "center",
         marginBottom: 10,
     },
@@ -37,14 +34,14 @@ export const styles = StyleSheet.create({
         color: "#333",
         textAlign: "center",
         marginBottom: 20,
-        paddingHorizontal: 20,
+        paddingHorizontal: 10,
     },
     button: {
         backgroundColor: "#D500F9",
         paddingVertical: 15,
         paddingHorizontal: 40,
         borderRadius: 30,
-        width: "80%",
+        width: "100%",
         alignItems: "center",
     },
     buttonText: {
