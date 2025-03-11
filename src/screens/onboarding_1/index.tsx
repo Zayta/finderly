@@ -17,7 +17,7 @@ export default function OnBoarding_1Screen() {
 
   return (
     <SafeAreaProvider>
-    <SafeAreaView style={styles.container} edges={['top']}>
+    <SafeAreaView style={styles.container}>
       <View style={styles.backButtonContainer}>
           <BackButton />
         </View>

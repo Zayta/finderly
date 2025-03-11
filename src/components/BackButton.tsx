@@ -17,6 +17,9 @@ export default function BackButton() {
           if (Platform.OS === "android") {
             BackHandler.exitApp();
           }
+          else{
+            alert('No back screen')
+          }
         }
       }}
     >
