@@ -1,5 +1,5 @@
 import React from "react";
-import { TouchableOpacity, StyleSheet } from "react-native";
+import { TouchableOpacity, StyleSheet, BackHandler, Platform, Linking } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 
@@ -14,11 +14,13 @@ export default function BackButton() {
           navigation.goBack();
         }
         else{
-            alert('There is no back screen');
+          if (Platform.OS === "android") {
+            BackHandler.exitApp();
+          }
         }
       }}
     >
-      <Ionicons name="arrow-back" size={24} color="white" />
+      <Ionicons name="arrow-back" size={36} color="white" />
     </TouchableOpacity>
   );
 }
@@ -28,7 +30,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 50,
     left: 20,
-    backgroundColor: "rgba(0,0,0,0.3)",
+    backgroundColor: "rgba(0,0,0,0.0)",
     borderRadius: 20,
     padding: 8,
   },
