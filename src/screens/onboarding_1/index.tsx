@@ -5,18 +5,16 @@ import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { RootStackParamList } from "@src/navigation/RootNavigator";
 import { ImageBackground } from "expo-image";
-import Overlay from "@src/screens/onboarding_1/components/Overlay";
+import OnboardingPanel from "@src/screens/onboarding_1/components/OnboardingPanel";
 import { SafeAreaProvider, SafeAreaView} from "react-native-safe-area-context";
 import BackButton from "@src/components/BackButton";
 import OnboardingBackground from "@src/screens/onboarding_1/components/OnboardingBackground";
-import { DeviceType, getDeviceType } from "@src/util/deviceUtils";
+import { DeviceType, getDeviceType } from "@src/utils/deviceUtils";
+import { styles } from "@src/screens/onboarding_1/styles";
 
 type NavigationProp = StackNavigationProp<RootStackParamList, "Onboarding_1">;
 
 export default function OnBoarding_1Screen() {
-  
-  const { width } = useWindowDimensions();
-  const isDesktop = getDeviceType(width)===DeviceType.DESKTOP;
 
   return (
     <SafeAreaProvider>
@@ -25,7 +23,7 @@ export default function OnBoarding_1Screen() {
           <BackButton />
         </View>
       <OnboardingBackground>
-        <Overlay isDesktop={isDesktop} />
+        <OnboardingPanel />
       </OnboardingBackground>
   </SafeAreaView>
   </SafeAreaProvider>
@@ -33,14 +31,3 @@ export default function OnBoarding_1Screen() {
   );
 }
 
-export const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-    },
-   
-    backButtonContainer: {
-      position: "absolute",
-      left: 20,
-      zIndex: 10, 
-    },
-});
