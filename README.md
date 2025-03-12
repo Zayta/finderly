@@ -83,10 +83,10 @@ npm start
 ---
 
 ## **Screenshots**
-
+Mobile:
 ![Screenshot_20250312-162246](https://github.com/user-attachments/assets/516ad1d0-f87e-4ef8-bf68-d526061e2260)
-![image](https://github.com/user-attachments/assets/51535d40-bcc9-47ab-bdd3-4d3ad05b90b3)
-![image](https://github.com/user-attachments/assets/50ac5a9c-25ab-41ef-8d59-07d91a55bc94)
+Desktop:
+![image](https://github.com/user-attachments/assets/d85d231e-5366-45ae-92a6-8aef0216c214)
 
 
 ## **Notes**
