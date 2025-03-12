@@ -27,10 +27,9 @@ finderly/
 │   ├── navigation/         # App navigation logic
 │   ├── screens/            # All screen-related code
 │   │   ├── (screen_name)/
-│   │   │   ├── (screenName)Screen.tsx   # Main screen component
 │   │   │   ├── components/              # Components specific to the screen
 │   │   │   ├── styles.ts                # Styles for the screen
-│   │   │   ├── index.ts                 # Barrel file exporting the screen
+│   │   │   ├── index.ts                 # Main screen component
 │   ├── utils/              # Helper functions for common app functionalities
 │── .gitignore              # Git ignore rules
 │── App.tsx                 # Main entry point of the React Native app
