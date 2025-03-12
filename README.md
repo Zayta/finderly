@@ -60,7 +60,7 @@ npm install
 3️⃣ Run the app:
 
 ```sh
-npx expo start
+npm start
 ```
 
 4️⃣ Scan the QR code using **Expo Go** on your mobile device or run it on an emulator.
@@ -72,7 +72,7 @@ npx expo start
 - **React Native** (with Expo)
 - **TypeScript**
 - **React Navigation** (for screen transitions)
-- **Animated API** (for fade-in effect)
+- **Animated API** (for fade effects)
 
 ---
 

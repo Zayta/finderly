@@ -1,8 +1,8 @@
-import OnBoarding_1Screen from '@src/screens/onboarding_1';
-import OnBoarding_2Screen from '@src/screens/onboarding_2';
+
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
+import OnBoarding_1Screen from '@src/screens/onboarding_1';
+import OnBoarding_2Screen from '@src/screens/onboarding_2';
 
 export type RootStackParamList = {
   Onboarding_1: undefined;
@@ -14,7 +14,7 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 export default function RootNavigator() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Onboarding_1">
+      <Stack.Navigator initialRouteName="Onboarding_1" >
         <Stack.Screen name="Onboarding_1" component={OnBoarding_1Screen} options={{headerShown: false,
         }}/>
         <Stack.Screen name="Onboarding_2" component={OnBoarding_2Screen} />

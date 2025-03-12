@@ -1,9 +1,8 @@
-import { useNavigation } from "@react-navigation/native";
+
 import { StackNavigationProp } from "@react-navigation/stack";
 import CTAButton from "@src/components/CTAButton";
 import { RootStackParamList } from "@src/navigation/RootNavigator";
-import { StyleSheet, useWindowDimensions } from "react-native";
-
+import { useWindowDimensions } from "react-native";
 import { View, Text } from "react-native";
 import { DeviceType, getDeviceType} from "@src/utils/deviceUtils";
 import { styles } from "@src/screens/onboarding_1/styles";
