@@ -1,12 +1,12 @@
 # **Onboarding Screen - Expo React Native**
 
-## **📌 Overview**
+## **Overview**
 
 This project implements an **Onboarding Screen** in **React Native with Expo**. The screen features a **background image, a text section, and a "Get Started" button** that navigates to a placeholder screen. The goal is to recreate the provided design while ensuring smooth interactivity and responsiveness.
 
 ---
 
-## **🚀 Features**
+## **Features**
 
 ✅ Background image covering the full screen  
 ✅ Text section overlaying half of the screen  
@@ -16,7 +16,7 @@ This project implements an **Onboarding Screen** in **React Native with Expo**. 
 
 ---
 
-## **📂 Project Structure**
+## **Project Structure**
 
 ```
 /onboarding-app
@@ -31,7 +31,7 @@ This project implements an **Onboarding Screen** in **React Native with Expo**. 
 
 ---
 
-## **🛠️ Installation & Setup**
+## **Installation & Setup**
 
 1️⃣ Clone this repository:
 
@@ -56,7 +56,7 @@ npx expo start
 
 ---
 
-## **🖥️ Technologies Used**
+## **Technologies Used**
 
 - **React Native** (with Expo)
 - **TypeScript**
@@ -65,19 +65,23 @@ npx expo start
 
 ---
 
-## **🔗 Navigation Flow**
+## **Navigation Flow**
 
 1️⃣ **Onboarding_1 Screen** (background image + text + button)  
 2️⃣ Clicking **"Get Started"** navigates to **Onboarding_2 Screen** (placeholder screen)
 
 ---
 
-## **📱 Screenshots**
+## **Screenshots**
 
 _(Include screenshots of the onboarding screen and navigation, if possible.)_
 
 ---
 
-## **📄 License**
+## **Notes**
+
+This app supports a minimum screen width of 240px.
+
+## **License**
 
 Feel free to use and modify it for learning.
