@@ -1,34 +1,44 @@
-
 import { StackNavigationProp } from "@react-navigation/stack";
 import CTAButton from "@src/components/CTAButton";
 import { RootStackParamList } from "@src/navigation/RootNavigator";
 import { useWindowDimensions } from "react-native";
 import { View, Text } from "react-native";
-import { DeviceType, getDeviceType} from "@src/utils/deviceUtils";
+import { DeviceType, getDeviceType } from "@src/utils/deviceUtils";
 import { styles } from "@src/screens/onboarding_1/styles";
 
-
 type NavigationProp = StackNavigationProp<RootStackParamList, "Onboarding_1">;
-export default function OnboardingPanel({navigation}:{navigation: NavigationProp}) {
+export default function OnboardingPanel({
+  navigation,
+}: {
+  navigation: NavigationProp;
+}) {
   const { width } = useWindowDimensions();
   const deviceType = getDeviceType(width);
-  const isDesktop = deviceType===DeviceType.DESKTOP;
-  const isMobile = deviceType===DeviceType.MOBILE;
+  const isDesktop = deviceType === DeviceType.DESKTOP;
+  const isMobile = deviceType === DeviceType.MOBILE;
 
   return (
-      <View style={isDesktop? styles.overlayDesktop:styles.overlayMobile}>
-        <View style={styles.panel}>
-          <View>
+    <View style={isDesktop ? styles.overlayDesktop : styles.overlayMobile}>
+      <View style={styles.panel}>
+        <View>
           <Text style={styles.title}>Hire a Professional</Text>
-          <Text style={{...styles.subtitle, ...(isMobile ? styles.subtitleMobile : {})}}>
-            Snap a photo, and Finderly's home improvement partners connect you with vetted pros—fast.
+          <Text
+            style={{
+              ...styles.subtitle,
+              ...(isMobile ? styles.subtitleMobile : {}),
+            }}
+          >
+            Snap a photo, and Finderly's home improvement partners connect you
+            with vetted pros—fast.
           </Text>
-          </View>
-          <View style={styles.buttonContainer}>
-          <CTAButton title={"Get Started"} onPress={() => navigation.navigate("Onboarding_2")}/>
-          </View>
+        </View>
+        <View style={styles.buttonContainer}>
+          <CTAButton
+            title={"Get Started"}
+            onPress={() => navigation.navigate("Onboarding_2")}
+          />
         </View>
       </View>
+    </View>
   );
 }
-

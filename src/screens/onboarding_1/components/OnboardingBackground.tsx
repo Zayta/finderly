@@ -6,7 +6,9 @@ interface OnboardingBackgroundProps {
   children: React.ReactNode;
 }
 
-export default function OnboardingBackground({ children }: OnboardingBackgroundProps) {
+export default function OnboardingBackground({
+  children,
+}: OnboardingBackgroundProps) {
   return (
     <ImageBackground
       source={require("@assets/images/onboarding_1-bg.png")}
@@ -17,4 +19,3 @@ export default function OnboardingBackground({ children }: OnboardingBackgroundP
     </ImageBackground>
   );
 }
-

@@ -1,5 +1,10 @@
 import React from "react";
-import { TouchableOpacity, StyleSheet, BackHandler, Platform} from "react-native";
+import {
+  TouchableOpacity,
+  StyleSheet,
+  BackHandler,
+  Platform,
+} from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 
@@ -7,18 +12,16 @@ export default function BackButton() {
   const navigation = useNavigation();
 
   return (
-    <TouchableOpacity 
-      style={styles.backButton} 
+    <TouchableOpacity
+      style={styles.backButton}
       onPress={() => {
         if (navigation.canGoBack()) {
           navigation.goBack();
-        }
-        else{
+        } else {
           if (Platform.OS === "android") {
             BackHandler.exitApp();
-          }
-          else{
-            alert('No back screen')
+          } else {
+            alert("No back screen");
           }
         }
       }}
