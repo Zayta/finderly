@@ -4,7 +4,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
-//define the props necessary for each screen or undefined if there are no custom props necessary
 export type RootStackParamList = {
   Onboarding_1: undefined;
   Onboarding_2: undefined;

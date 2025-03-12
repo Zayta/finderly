@@ -8,20 +8,26 @@ import { View, Text } from "react-native";
 import { DeviceType, getDeviceType} from "@src/utils/deviceUtils";
 import { styles } from "@src/screens/onboarding_1/styles";
 
-type NavigationProp = StackNavigationProp<RootStackParamList, "Onboarding_1">;
 
-export default function OnboardingPanel() {
+type NavigationProp = StackNavigationProp<RootStackParamList, "Onboarding_1">;
+export default function OnboardingPanel({navigation}:{navigation: NavigationProp}) {
   const { width } = useWindowDimensions();
-  const isDesktop = getDeviceType(width)===DeviceType.DESKTOP;
+  const deviceType = getDeviceType(width);
+  const isDesktop = deviceType===DeviceType.DESKTOP;
+  const isMobile = deviceType===DeviceType.MOBILE;
 
   return (
       <View style={isDesktop? styles.overlayDesktop:styles.overlayMobile}>
-        <View style={styles.textContainer}>
+        <View style={styles.panel}>
+          <View>
           <Text style={styles.title}>Hire a Professional</Text>
-          <Text style={styles.subtitle}>
+          <Text style={{...styles.subtitle, ...(isMobile ? styles.subtitleMobile : {})}}>
             Snap a photo, and Finderly's home improvement partners connect you with vetted pros—fast.
           </Text>
-          <CTAButton title={"Get Started"} onPress={()=>alert('next') }/>
+          </View>
+          <View style={styles.buttonContainer}>
+          <CTAButton title={"Get Started"} onPress={() => navigation.navigate("Onboarding_2")}/>
+          </View>
         </View>
       </View>
   );

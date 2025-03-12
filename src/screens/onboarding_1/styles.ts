@@ -5,20 +5,18 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
     },
-
     backButtonContainer: {
         position: "absolute",
-        left: 20,
+        left: 35,
         zIndex: 10,
+        top: 50,
     },
-
     backgroundImage: {
         flex: 1,
         justifyContent: "center",
         width: "100%",
         height: "100%",
     },
-
     overlayMobile: {
         position: "absolute",
         bottom: 0,
@@ -35,7 +33,6 @@ export const styles = StyleSheet.create({
         shadowOffset: { width: 0, height: 2 },
         shadowRadius: 5,
     },
-
     overlayDesktop: {
         position: "absolute",
         width: "50%",
@@ -52,29 +49,32 @@ export const styles = StyleSheet.create({
         shadowOffset: { width: 0, height: 2 },
         shadowRadius: 5,
     },
-
-    textContainer: {
+    panel: {
         width: "100%",
         height: "100%",
-        padding: 20,
+        padding: 15,
         display: "flex",
         alignItems: "center",
         justifyContent: "space-around",
     },
-
     title: {
-        fontSize: 32,
+        fontSize: 24,
         fontWeight: "bold",
         color: "#EA00D4",
         textAlign: "center",
-        marginBottom: 10,
+        marginBottom: 20,
     },
-
     subtitle: {
-        fontSize: 24,
+        fontSize: 20,
         color: "#333",
         textAlign: "center",
-        marginBottom: 20,
-        paddingHorizontal: 10,
+        paddingHorizontal: 20,
+        marginBottom: 30
     },
+    subtitleMobile: {
+        textAlign: "left",
+    },
+    buttonContainer: {
+        width: '95%'
+    }
 });

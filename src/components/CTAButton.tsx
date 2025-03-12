@@ -1,5 +1,5 @@
 import React from "react";
-import { TouchableOpacity, Text, StyleSheet } from "react-native";
+import { TouchableOpacity, Text, StyleSheet, Pressable } from "react-native";
 
 interface CTAButtonProps {
   title: string;
@@ -13,18 +13,23 @@ export default function CTAButton({
   onPress,
 }: CTAButtonProps) {
   return (
-      <TouchableOpacity style={styles.button} onPress={()=>onPress()}>
-        <Text style={styles.buttonText}>{title}</Text>
-      </TouchableOpacity>
+    <Pressable
+    style={({ pressed }) => [
+      styles.button,
+      pressed && styles.buttonPressed, // Click effect
+    ]}
+    onPress={onPress}
+  >
+    <Text style={styles.buttonText}>{title}</Text>
+  </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
   button: {
-    width: "90%",  // Adjust width to take most of the container
-    alignSelf: "center",  // Center the button
-    paddingVertical: 18,  // Increase height
-    borderRadius: 30,  // Match rounded edges
+    width: '100%',
+    paddingVertical: 18,
+    borderRadius: 30,
     alignItems: "center",
     justifyContent: "center",
     shadowColor: "#000",
@@ -33,8 +38,12 @@ const styles = StyleSheet.create({
     shadowRadius: 5,
     backgroundColor:"#EA00D4"
   },
+  buttonPressed: {
+    transform: [{ scale: 0.90 }],
+    opacity: 0.5,
+  },
   buttonText: {
-    fontSize: 18,  // Increase font size for better readability
+    fontSize: 18,
     fontWeight: "bold",
     color:"#ffffff"
   },
