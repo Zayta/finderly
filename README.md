@@ -19,14 +19,25 @@ This project implements an **Onboarding Screen** in **React Native with Expo**. 
 ## **Project Structure**
 
 ```
-/onboarding-app
- ├── /assets              # Images and static assets
- ├── /components          # Reusable UI components (e.g., Button)
- ├── /screens             # Onboarding_1 screen and placeholder screen
- ├── App.tsx              # Entry point of the app
- ├── README.md            # Project documentation
- ├── package.json         # Project dependencies
- └── tsconfig.json        # TypeScript configuration
+finderly/
+│── assets/                 # Static assets (images, icons, fonts)
+│── src/                    # Main source code
+│   ├── components/         # Reusable UI components
+│   ├── constants/          # App-wide constants (e.g., breakpoints)
+│   ├── navigation/         # App navigation logic
+│   ├── screens/            # All screen-related code
+│   │   ├── (screen_name)/
+│   │   │   ├── (screenName)Screen.tsx   # Main screen component
+│   │   │   ├── components/              # Components specific to the screen
+│   │   │   ├── styles.ts                # Styles for the screen
+│   │   │   ├── index.ts                 # Barrel file exporting the screen
+│   ├── utils/              # Helper functions for common app functionalities
+│── .gitignore              # Git ignore rules
+│── App.tsx                 # Main entry point of the React Native app
+│── package.json            # Project dependencies and scripts
+│── tsconfig.json           # TypeScript configuration
+│── README.md               # Project documentation
+│── index.ts                # Entry file for the app
 ```
 
 ---
