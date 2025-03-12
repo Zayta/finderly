@@ -2,7 +2,7 @@
 
 ## **Overview**
 
-This project implements an **Onboarding Screen** in **React Native with Expo**. The screen features a **background image, a text section, and a "Get Started" button** that navigates to a placeholder screen. The goal is to recreate the provided design while ensuring smooth interactivity and responsiveness.
+This code implements an **Onboarding Screen** in **React Native with Expo**. The screen features a **background image, a text section, and a "Get Started" button** that navigates to a placeholder screen. The goal is to recreate the provided design while ensuring smooth interactivity and responsiveness.
 
 ---
 
@@ -84,9 +84,10 @@ npm start
 
 ## **Screenshots**
 
-_(Include screenshots of the onboarding screen and navigation, if possible.)_
+![Screenshot_20250312-162246](https://github.com/user-attachments/assets/516ad1d0-f87e-4ef8-bf68-d526061e2260)
+![image](https://github.com/user-attachments/assets/51535d40-bcc9-47ab-bdd3-4d3ad05b90b3)
+![image](https://github.com/user-attachments/assets/50ac5a9c-25ab-41ef-8d59-07d91a55bc94)
 
----
 
 ## **Notes**
 
