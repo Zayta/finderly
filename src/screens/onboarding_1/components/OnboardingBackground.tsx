@@ -12,7 +12,6 @@ export default function OnboardingBackground({ children }: OnboardingBackgroundP
       source={require("@assets/images/onboarding_1-bg.png")}
       contentFit="fill"
       style={styles.image}
-      contentPosition={{ top: -70 }}
     >
       {children}
     </ImageBackground>
