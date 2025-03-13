@@ -71,6 +71,7 @@ npm start
 - **React Native** (with Expo)
 - **TypeScript**
 - **React Navigation** (for screen transitions)
+- **React Native Testing Library and Jest** (for testing)
 
 ---
 
