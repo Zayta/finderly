@@ -10,8 +10,8 @@ This code implements an **Onboarding Screen** in **React Native with Expo**. The
 
 ✅ Background image covering the full screen  
 ✅ Text section overlaying half of the screen  
-✅ "Get Started" button for navigation  
-✅ Smooth fade-in animation for a better user experience  
+✅ "Get Started" button for navigation
+✅ Animated effect for screen transitions
 ✅ Responsive design for different screen sizes
 
 ---
@@ -71,7 +71,6 @@ npm start
 - **React Native** (with Expo)
 - **TypeScript**
 - **React Navigation** (for screen transitions)
-- **Animated API** (for fade effects)
 
 ---
 
