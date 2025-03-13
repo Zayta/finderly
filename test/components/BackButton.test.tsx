@@ -2,9 +2,7 @@ import React from "react";
 import { render, fireEvent } from "@testing-library/react-native";
 import { NavigationContainer, useNavigation } from "@react-navigation/native";
 import BackButton from "@src/components/BackButton";
-import { Platform, Alert, BackHandler } from "react-native";
 
-//navigation mocks
 const mockCanGoBack = jest.fn();
 const mockGoBack = jest.fn();
 const mockNavigate = jest.fn();
@@ -46,26 +44,4 @@ describe("BackButton", () => {
     const mockNavigation = useNavigation();
     expect(mockNavigation.goBack).toHaveBeenCalled();
   });
-
-  // it("calls BackHandler.exitApp on Android if no screens can be navigated back", () => {
-  //   Platform.OS = "android";
-
-  //   const { getByTestId } = render(<Wrapper canGoBack={false} />);
-  //   const button = getByTestId("back-button");
-
-  //   fireEvent.press(button);
-
-  //   expect(BackHandler.exitApp).toHaveBeenCalled();
-  // });
-
-  // it("shows an alert on iOS if no screens can be navigated back", () => {
-  //   Platform.OS = "ios";
-
-  //   const { getByTestId } = render(<Wrapper canGoBack={false} />);
-  //   const button = getByTestId("back-button");
-
-  //   fireEvent.press(button);
-
-  //   expect(Alert.alert).toHaveBeenCalledWith("No back screen");
-  // });
 });
