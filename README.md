@@ -90,7 +90,7 @@ Desktop:
 
 ## **Notes**
 
-This app supports a minimum screen width of 240px and a maximum screen width of 2000px.
+This app supports a minimum screen width of 270px and a maximum screen width of 2000px.
 
 ## **License**
 
