@@ -13,6 +13,7 @@ export default function BackButton() {
 
   return (
     <TouchableOpacity
+      testID="back-button"
       style={styles.backButton}
       onPress={() => {
         if (navigation.canGoBack()) {
