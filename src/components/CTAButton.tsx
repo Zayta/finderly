@@ -11,10 +11,7 @@ interface CTAButtonProps {
 export default function CTAButton({ title, onPress }: CTAButtonProps) {
   return (
     <Pressable
-      style={({ pressed }) => [
-        styles.button,
-        pressed && styles.buttonPressed, // Click effect
-      ]}
+      style={({ pressed }) => [styles.button, pressed && styles.buttonPressed]}
       onPress={onPress}
     >
       <Text style={styles.buttonText}>{title}</Text>

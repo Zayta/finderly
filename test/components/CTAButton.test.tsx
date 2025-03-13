@@ -4,7 +4,7 @@ import CTAButton from "@src/components/CTAButton";
 
 describe("CTAButton", () => {
   it("renders correctly and responds to press events", () => {
-    const mockOnPress = jest.fn(); // Create a mock function for onPress
+    const mockOnPress = jest.fn();
     const { getByText } = render(
       <CTAButton title="Click Me" onPress={mockOnPress} />,
     );

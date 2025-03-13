@@ -1,8 +1,7 @@
 import React from "react";
 import { render } from "@testing-library/react-native";
-import OnBoarding_1Screen from "@src/screens/onboarding_1";
 import { NavigationContainer } from "@react-navigation/native";
-import { SafeAreaProvider } from "react-native-safe-area-context";
+import OnBoarding_1Screen from "@src/screens/onboarding_1";
 
 const mockNavigate = jest.fn();
 
