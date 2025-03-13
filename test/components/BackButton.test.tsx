@@ -20,7 +20,7 @@ jest.mock("@react-navigation/native", () => {
 });
 
 describe("BackButton", () => {
-  const Wrapper = ({ canGoBack = true }) => {
+  const BackButtonWrapper = ({ canGoBack = true }) => {
     mockCanGoBack.mockImplementation(() => canGoBack);
     return (
       <NavigationContainer>
@@ -30,13 +30,13 @@ describe("BackButton", () => {
   };
 
   it("renders correctly", () => {
-    const { getByTestId } = render(<Wrapper />);
+    const { getByTestId } = render(<BackButtonWrapper />);
     const button = getByTestId("back-button");
     expect(button).toBeTruthy();
   });
 
   it("calls goBack when navigation can go back", () => {
-    const { getByTestId } = render(<Wrapper canGoBack={true} />);
+    const { getByTestId } = render(<BackButtonWrapper canGoBack={true} />);
     const button = getByTestId("back-button");
 
     fireEvent.press(button);

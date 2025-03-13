@@ -1,10 +1,14 @@
-# **Onboarding Screen - Expo React Native**
+# **Finderly Onboarding Screen - Expo React Native**
 
 ## **Overview**
 
 This code implements an **Onboarding Screen** in **React Native with Expo**. The screen features a **background image, a text section, and a "Get Started" button** that navigates to a placeholder screen. The goal is to recreate the provided design while ensuring smooth interactivity and responsiveness.
 
 ---
+
+### **Assumptions**
+
+This app is intended to support a minimum screen width of 270px and a maximum screen width of 2000px.
 
 ## **Features**
 
@@ -86,13 +90,10 @@ npm start
 
 Mobile:
 ![Screenshot_20250312-162246](https://github.com/user-attachments/assets/516ad1d0-f87e-4ef8-bf68-d526061e2260)
-Desktop:
+Desktop (I just thought that having the CTA panel in the center would look nicer than stretching the view):
 ![image](https://github.com/user-attachments/assets/d85d231e-5366-45ae-92a6-8aef0216c214)
 
 ## **Notes**
 
-This app supports a minimum screen width of 270px and a maximum screen width of 2000px.
-
-## **License**
-
-Feel free to use and modify it for learning.
+This is my first time working with React Native for mobile dev.
+Feel free to use and modify this code for learning.
