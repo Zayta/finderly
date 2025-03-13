@@ -8,7 +8,7 @@ import BackButton from "@src/components/BackButton";
 import OnboardingBackground from "@src/screens/onboarding_1/components/OnboardingBackground";
 import { RootStackParamList } from "@src/navigation/RootNavigator";
 import { styles } from "@src/screens/onboarding_1/styles";
-import { getDeviceType } from "@src/utils/deviceUtils";
+import { getDeviceType } from "@src/utils/DeviceUtils";
 
 type NavigationProp = StackNavigationProp<RootStackParamList, "Onboarding_1">;
 

@@ -1,7 +1,7 @@
 import { View, Text } from "react-native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { RootStackParamList } from "@src/navigation/RootNavigator";
-import { DeviceType } from "@src/utils/deviceUtils";
+import { DeviceType } from "@src/utils/DeviceUtils";
 import { styles } from "@src/screens/onboarding_1/styles";
 import CTAButton from "@src/components/CTAButton";
 
