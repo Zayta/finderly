@@ -5,8 +5,8 @@ import {
   BackHandler,
   Platform,
 } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
+import { Ionicons } from "@expo/vector-icons";
 
 export default function BackButton() {
   const navigation = useNavigation();

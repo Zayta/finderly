@@ -22,7 +22,7 @@ This code implements an **Onboarding Screen** in **React Native with Expo**. The
 finderly/
 │── assets/                 # Static assets (images, icons, fonts)
 │── src/                    # Main source code
-│   ├── components/         # Reusable UI components
+│   ├── components/         # Reusable UI components (e.g. buttons)
 │   ├── constants/          # App-wide constants (e.g., breakpoints)
 │   ├── navigation/         # App navigation logic
 │   ├── screens/            # All screen-related code
@@ -83,15 +83,15 @@ npm start
 ---
 
 ## **Screenshots**
+
 Mobile:
 ![Screenshot_20250312-162246](https://github.com/user-attachments/assets/516ad1d0-f87e-4ef8-bf68-d526061e2260)
 Desktop:
 ![image](https://github.com/user-attachments/assets/d85d231e-5366-45ae-92a6-8aef0216c214)
 
-
 ## **Notes**
 
-This app supports a minimum screen width of 240px.
+This app supports a minimum screen width of 240px and a maximum screen width of 2000px.
 
 ## **License**
 
