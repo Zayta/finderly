@@ -14,12 +14,13 @@ export default function App() {
     Inter_400Regular,
   });
 
-  if (fontsLoaded) {
-    return (
-      <SafeAreaProvider>
-        <RootNavigator />
-      </SafeAreaProvider>
-    );
+  if (!fontsLoaded) {
+    return null;
   }
-  return null;
+
+  return (
+    <SafeAreaProvider>
+      <RootNavigator />
+    </SafeAreaProvider>
+  );
 }
