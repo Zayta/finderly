@@ -1,16 +1,14 @@
 import { View, Text } from "react-native";
-import { StackNavigationProp } from "@react-navigation/stack";
-import { RootStackParamList } from "@src/navigation/RootNavigator";
 import { DeviceType } from "@src/utils/DeviceUtils";
 import { styles } from "@src/screens/onboarding_1/styles";
 import CTAButton from "@src/components/CTAButton";
+import { Onboarding1NavigationProp } from "@src/screens/onboarding_1";
 
-type NavigationProp = StackNavigationProp<RootStackParamList, "Onboarding_1">;
 export default function OnboardingPanel({
   navigation,
   deviceType,
 }: {
-  navigation: NavigationProp;
+  navigation: Onboarding1NavigationProp;
   deviceType: DeviceType;
 }) {
   const isDesktop = deviceType === DeviceType.DESKTOP;
