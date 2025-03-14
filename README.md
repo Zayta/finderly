@@ -98,4 +98,5 @@ Desktop (I just thought that having the CTA panel in the center would look nicer
 ## **Notes**
 
 This is my first time working with React Native for mobile dev.
+Sources used: [React Expo docs](https://docs.expo.dev/), [ChatGPT](https://chatgpt.com/), [React Native Jest testing tutorial](https://www.youtube.com/watch?v=PlppJvJ67GA)
 Feel free to use and modify this code for learning.
