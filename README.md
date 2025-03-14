@@ -93,11 +93,9 @@ Mobile:
 
 
 Desktop (I just thought that having the CTA panel in the center would look nicer than stretching the view):
-![image](https://github.com/user-attachments/assets/866ad736-f252-4525-af99-1e2131e34220)
+![image](https://github.com/user-attachments/assets/dacceb26-a4cf-4eab-9493-9180a3864fea)
+
 
 
 ## **Notes**
-
-This is my first time working with React Native for mobile dev.   
-Sources used: [React Expo docs](https://docs.expo.dev/), [ChatGPT](https://chatgpt.com/), [React Native Jest testing tutorial](https://www.youtube.com/watch?v=PlppJvJ67GA).   
 Feel free to use and modify this code for learning.
