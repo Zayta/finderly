@@ -8,7 +8,7 @@ This code implements an **Onboarding Screen** in **React Native with Expo**. The
 
 ### **Assumptions**
 
-This app is intended to support a minimum screen width of 270px and a maximum screen width of 2000px.
+This app is intended to support a minimum screen width of 280px and a maximum screen width of 2000px.
 
 ## **Features**
 
