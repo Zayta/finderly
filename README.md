@@ -50,7 +50,7 @@ finderly/
 1️⃣ Clone this repository:
 
 ```sh
-git clone <repo-url>
+git clone https://github.com/Zayta/finderly.git
 cd onboarding-app
 ```
 
