@@ -8,7 +8,7 @@ This code implements an **Onboarding Screen** in **React Native with Expo**. The
 
 ### **Assumptions**
 
-This app is intended to support a minimum screen width of 270px and a maximum screen width of 2000px.
+This app is intended to support a minimum screen width of 280px and a maximum screen width of 2000px.
 
 ## **Features**
 
@@ -89,14 +89,13 @@ npm start
 ## **Screenshots**
 
 Mobile:
-![Screenshot_20250314-004602](https://github.com/user-attachments/assets/2cd14e1b-8b50-4675-8f98-c381937b41c1)
+![Screenshot_20250314-113759](https://github.com/user-attachments/assets/3f40cc58-1745-44e2-9b98-9bdd8b5df236)
+
 
 Desktop (I just thought that having the CTA panel in the center would look nicer than stretching the view):
-![image](https://github.com/user-attachments/assets/866ad736-f252-4525-af99-1e2131e34220)
+![image](https://github.com/user-attachments/assets/dacceb26-a4cf-4eab-9493-9180a3864fea)
+
 
 
 ## **Notes**
-
-This is my first time working with React Native for mobile dev.   
-Sources used: [React Expo docs](https://docs.expo.dev/), [ChatGPT](https://chatgpt.com/), [React Native Jest testing tutorial](https://www.youtube.com/watch?v=PlppJvJ67GA).   
 Feel free to use and modify this code for learning.
