@@ -59,7 +59,6 @@ export const styles = StyleSheet.create({
   title: {
     fontFamily: "Poppins_300Light",
     fontSize: 28,
-    fontWeight: "bold",
     color: "#EA00D4",
     textAlign: "center",
     marginBottom: 20,
