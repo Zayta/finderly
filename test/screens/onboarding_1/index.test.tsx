@@ -32,11 +32,5 @@ describe("OnBoarding_1Screen", () => {
         "Snap a photo, and Finderly's home improvement partners connect you with vetted pros—fast.",
       ),
     ).toBeTruthy();
-    expect(getByText("Hire a Professional")).toBeTruthy();
-    expect(
-      getByText(
-        "Snap a photo, and Finderly's home improvement partners connect you with vetted pros—fast.",
-      ),
-    ).toBeTruthy();
   });
 });
