@@ -14,9 +14,9 @@ This app is intended to support a minimum screen width of 270px and a maximum sc
 
 ✅ Background image covering the full screen  
 ✅ Text section overlaying half of the screen  
-✅ "Get Started" button for navigation
-✅ Animated effect for screen transitions
-✅ Responsive design for different screen sizes
+✅ "Get Started" button for navigation  
+✅ Animated effect for screen transitions  
+✅ Responsive design for different screen sizes  
 
 ---
 
@@ -50,7 +50,7 @@ finderly/
 1️⃣ Clone this repository:
 
 ```sh
-git clone <repo-url>
+git clone https://github.com/Zayta/finderly.git
 cd onboarding-app
 ```
 
@@ -97,5 +97,6 @@ Desktop (I just thought that having the CTA panel in the center would look nicer
 
 ## **Notes**
 
-This is my first time working with React Native for mobile dev.
+This is my first time working with React Native for mobile dev.   
+Sources used: [React Expo docs](https://docs.expo.dev/), [ChatGPT](https://chatgpt.com/), [React Native Jest testing tutorial](https://www.youtube.com/watch?v=PlppJvJ67GA).   
 Feel free to use and modify this code for learning.
