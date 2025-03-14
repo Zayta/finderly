@@ -8,7 +8,7 @@ This code implements an **Onboarding Screen** in **React Native with Expo**. The
 
 ### **Assumptions**
 
-This app is intended to support a minimum screen width of 280px and a maximum screen width of 2000px.
+This app is intended to support a minimum screen width of 280px and a maximum screen width of 1920px.
 
 ## **Features**
 
@@ -93,7 +93,8 @@ Mobile:
 
 
 Desktop (I just thought that having the CTA panel in the center would look nicer than stretching the view):
-![image](https://github.com/user-attachments/assets/dacceb26-a4cf-4eab-9493-9180a3864fea)
+![image](https://github.com/user-attachments/assets/55f0ef92-4ad8-42f1-965f-8bdc4092b16a)
+
 
 
 
