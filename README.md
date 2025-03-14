@@ -14,9 +14,9 @@ This app is intended to support a minimum screen width of 270px and a maximum sc
 
 ✅ Background image covering the full screen  
 ✅ Text section overlaying half of the screen  
-✅ "Get Started" button for navigation
-✅ Animated effect for screen transitions
-✅ Responsive design for different screen sizes
+✅ "Get Started" button for navigation  
+✅ Animated effect for screen transitions  
+✅ Responsive design for different screen sizes  
 
 ---
 
