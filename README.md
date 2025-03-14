@@ -89,9 +89,11 @@ npm start
 ## **Screenshots**
 
 Mobile:
-![Screenshot_20250312-162246](https://github.com/user-attachments/assets/516ad1d0-f87e-4ef8-bf68-d526061e2260)
+![Screenshot_20250314-004602](https://github.com/user-attachments/assets/2cd14e1b-8b50-4675-8f98-c381937b41c1)
+
 Desktop (I just thought that having the CTA panel in the center would look nicer than stretching the view):
-![image](https://github.com/user-attachments/assets/d85d231e-5366-45ae-92a6-8aef0216c214)
+![image](https://github.com/user-attachments/assets/866ad736-f252-4525-af99-1e2131e34220)
+
 
 ## **Notes**
 
