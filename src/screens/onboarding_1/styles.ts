@@ -57,13 +57,15 @@ export const styles = StyleSheet.create({
     justifyContent: "space-around",
   },
   title: {
-    fontSize: 24,
+    fontFamily: "Poppins_300Light",
+    fontSize: 28,
     fontWeight: "bold",
     color: "#EA00D4",
     textAlign: "center",
     marginBottom: 20,
   },
   subtitle: {
+    fontFamily: "Inter_400Regular",
     fontSize: 20,
     color: "#333",
     textAlign: "center",

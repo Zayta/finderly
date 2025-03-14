@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
     opacity: 0.5,
   },
   buttonText: {
+    fontFamily: "Poppins_600SemiBold",
     fontSize: 18,
     fontWeight: "bold",
     color: "#ffffff",
